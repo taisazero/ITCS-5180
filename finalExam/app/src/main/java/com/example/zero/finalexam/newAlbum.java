@@ -176,7 +176,7 @@ public class newAlbum extends AppCompatActivity  implements DatePickerDialog.OnD
         BufferedReader reader = null;
         String result = null;
         try {
-            URL url = new URL("https://maps.googleapis.com/maps/api/geocode/json?address="+address+"&key="+"AIzaSyAEcAewpAhBhYjOMuoaRLUB35NCugJ32C4");
+            URL url = new URL("https://maps.googleapis.com/maps/api/geocode/json?address="+address+"&key="+"key");
             connection = (HttpURLConnection) url.openConnection();
             connection.connect();
             if (connection.getResponseCode() == HttpURLConnection.HTTP_OK) {

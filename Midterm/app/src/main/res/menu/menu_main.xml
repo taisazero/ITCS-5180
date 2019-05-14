@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.zero.midterm.MainActivity">
+    <item
+        android:id="@+id/rating_sort"
+        android:orderInCategory="100"
+        android:title="Sort By Rating"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/popularity_sort"
+        android:orderInCategory="101"
+        android:title="Sort By Popularity" />
+    <item
+        android:id="@+id/fav"
+        android:orderInCategory="102"
+        android:title="Show Favorites" />
+    <item
+        android:id="@+id/quit"
+        android:orderInCategory="103"
+        android:title="Quit" />
+</menu>

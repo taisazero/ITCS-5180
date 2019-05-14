@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zero.finalexam.ViewAlbum">
+
+    <ImageButton
+        android:id="@+id/albumHome"
+        android:layout_width="59dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="454dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="309dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="455dp"
+        android:layout_marginEnd="238dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="37dp"
+        android:text="Trip"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/albumHome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/album_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="378dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="55dp"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/album_name"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/album_list"
+        android:layout_width="379dp"
+        android:layout_height="194dp"
+        android:layout_marginBottom="176dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/album_date" />
+
+    <Button
+        android:id="@+id/album_viewMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:layout_marginEnd="268dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="55dp"
+        android:text="View Map"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/album_list" />
+
+    <Button
+        android:id="@+id/album_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="55dp"
+        android:text="Close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/album_viewMap"
+        app:layout_constraintTop_toBottomOf="@+id/album_list" />
+</android.support.constraint.ConstraintLayout>
